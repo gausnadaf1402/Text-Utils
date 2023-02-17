@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextUtils</title>
+</head>
+
+<body>
+    <h1>welcome to the text analyzer.Enter your text below</h1>
+    <form action='/analyze' ,method='get'>
+        {% csrf_token %}
+        <textarea name='text' style="width: 1042px; height: 123px;"></textarea><br>
+        <input type="checkbox" name="removepunc">Remove punctutation<br>
+        <input type="checkbox" name="fullcaps">UPPERCASE<br>
+        <input type="checkbox" name="halfcaps">lowercase<br>
+        <input type="checkbox" name="NewLineRemover">NewLineRemover<br>
+        <input type="checkbox" name="extraspaceremover">extraspaceremover<br>
+        <input type="checkbox" name="charactercounter">charactercounter<br>
+        <button type="submit">Analyze text</button>
+    </form>
+
+    <!-- <form action="/newlineremove",method='get'>
+        <textarea name='text' style="width: 671px; height: 87px;"></textarea><br>
+        <button type="submit">my button</button>
+    </form> -->
+</body>
+
+</html>

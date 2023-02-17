@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Text Utils</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">textutils.in</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">Contact Us
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Welcome To Text Utils!</strong> You can do anything with your text here.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
+    <div class="container">
+        <form action='/analyze' ,method='get'>
+            <label for="exampleFormControlTextarea1">Enter your text here and let text utils do the magic</label>
+            <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="6"></textarea>
+    </div>
+
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="removepunc" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1" style="left: 96px;">remove punctuation</label>
+    </div><br>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="fullcaps" class="custom-control-input" id="customSwitch2">
+        <label class="custom-control-label" for="customSwitch2" style="left: 96px;top:-22px;">UPPERCASE</label>
+    </div><br>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="HALFcaps" class="custom-control-input" id="customSwitch3">
+        <label class="custom-control-label" for="customSwitch3" style="left: 96px;bottom:45px;">lowercase</label>
+    </div><br>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="NewLineRemover" class="custom-control-input" id="customSwitch4">
+        <label class="custom-control-label" for="customSwitch4" style="left: 96px;bottom:68px;">NewLineRemover</label>
+    </div><br>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="extraspaceremover" class="custom-control-input" id="customSwitch5">
+        <label class="custom-control-label" for="customSwitch5"
+            style="left: 96px;bottom:92px;">extraspaceremover</label>
+    </div><br>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="charactercounter" class="custom-control-input" id="customSwitch6">
+        <label class="custom-control-label" for="customSwitch6"
+            style="left: 96px;bottom:117px;">charactercounter</label>
+    </div><br>
+    <button type="submit" class="btn btn-success mt-1" style="left: 97px;position: absolute;top:89vh;">Analyze
+        Text</button>
+    </form>
+</body>
+
+</html>
